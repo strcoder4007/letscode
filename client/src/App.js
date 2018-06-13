@@ -12,7 +12,7 @@ class App extends Component {
           ot :true
         }
   componentDidMount() {
-    fetch('http://letscode.live:5000/api')
+    fetch('http://18.221.40.67:3001/api')
       .then(res => res.json())
       .then(data => this.setState({ users:data.result.ongoing,less:data.result.upcoming }));
   }
